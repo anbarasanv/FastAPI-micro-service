@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "payment-micro-service"
+version = "0.1.0"
+description = ""
+authors = ["Anbarasan Vellaiyan <anbarasan.vellaiyan@cytel.com>"]
+readme = "README.md"
+packages = [{include = "payment_micro_service"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "0.75.0"
+redis-om = "0.0.20"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
