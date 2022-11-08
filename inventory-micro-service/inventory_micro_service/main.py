@@ -54,6 +54,6 @@ def get_single_product(product_key: str):
     return Product.get(product_key)
 
 
-@app.delete("products/{pk}")
-def delete_single_product(pk: str):
-    return Product.delete(pk)
+@app.delete("/products/{product_key}")
+def delete_single_product(product_key: str):
+    return Product.delete(product_key)
